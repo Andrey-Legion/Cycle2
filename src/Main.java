@@ -63,13 +63,12 @@ public class Main {
         System.out.print("\n");
 
         //Task2-4
-        //Создайте переменную типа int, которая хранит в себе номер первой пятницы месяца (число от 1 до 7)- вообще не понятно условие!
         int friday=1;
         //int dayOfWeek=1;
         //int dayMonth=1;
         for(int day=1;day<=31;day+=1) {
 
-            if(day>=1 && day<=7 && friday%day==0){
+            if(day%7==friday){
                 System.out.println("Сегодня пятница, "+day+"-е число. Необходимо подготовить отчет.");
             }
 
@@ -77,12 +76,11 @@ public class Main {
 
         System.out.println();
         //Task3-1
-        int year=0;
-        int intervalStart=year-200, intervalFinish=year+100;
-        for( int in=year; year<=2022; in+=79 ) {
-            year = in;
-            if (year >=2022+intervalStart && year <=2022+intervalFinish) { //выразить искомый интервал с помощью переменных
-                System.out.println(year);                                   // не сумел
+        int currentYear=2022;
+        int intervalStart=currentYear-200, intervalFinish=currentYear+100;
+        for( int year = 0; year <= intervalFinish; year += 79 ) {
+            if (year >= intervalStart) {
+                System.out.println(year);
             }
         }
 
