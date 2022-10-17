@@ -72,10 +72,7 @@ public class Main {
             if(day>=1 && day<=7 && friday%day==0){
                 System.out.println("Сегодня пятница, "+day+"-е число. Необходимо подготовить отчет.");
             }
-            //dayMonth=4*dayOfWeek;
-            //if (friday%dayMonth==0 || friday%dayOfWeek==0){
-                //
-            //System.out.print(day+" ");
+
         }
 
         System.out.println();
